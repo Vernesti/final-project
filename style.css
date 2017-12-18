@@ -140,6 +140,10 @@ a {
 
 /*Content start*/
 
+.content {
+	font-family: "Alfios";
+}
+
 .content-first {
 	display: flex;
 	width: 100%;
@@ -234,6 +238,7 @@ a {
 	flex-basis: 100%;
 	min-height: 300px;
 	background-color: #1e1e1b;
+	font-family: "Alfios";
 }
 
 .footer-map {
