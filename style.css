@@ -60,8 +60,6 @@ a {
 	z-index: 5;
 	margin-top: 10px;
 	left: -10px;
-	min-height: 0px;
-	transition: min-height 0.5s;
 }
 
 .header-list__item-drop li {
@@ -71,6 +69,7 @@ a {
 	border: 1px solid #000;
 	transition: all .5s;
 	font-size: 22px;
+	letter-spacing: 1px;
 }
 .header-list__item-drop li:hover {
 	transform: translateX(5px);
