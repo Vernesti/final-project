@@ -29,6 +29,11 @@ a {
 	justify-content: flex-end;
 	padding-right: 50px;
 }
+.header-logo img {
+	height: 60px;
+	width: 250px;
+
+}
 
 .header-menu{
 	flex-basis: 50%;
@@ -95,11 +100,11 @@ a {
 	text-align: center;
 }
 
-/*Slider start*/
+/*Slider*/
 
 .slider {
 	width: 100%;
-	min-height: 600px;
+	height: 600px;
 	background-color: black;
 	color: white;
 	font-size: 50px;
@@ -159,21 +164,31 @@ a {
 }
 
 .slider__img-first {
-	background-image: url(img/slider-test/lion.jpg);
+	background-image: url(img/slider-test/cartonCity.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .slider__img-second {
-	background-image: url(img/slider-test/pantera.jpg);
+	background-image: url(img/slider-test/highway.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .slider__img-third {
-	background-image: url(img/slider-test/tiger.jpg);
+	background-image: url(img/slider-test/NYC.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-/*Content start*/
+/*Content*/
 
 .content {
 	font-family: "Alfios";
+	
 }
 
 .content-first {
@@ -190,15 +205,24 @@ a {
 }
 
 .content__item-first__circle {
-	background-color:red;
+	background-image: url(img/content/content-circle__first.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 }
 
 .content__item-second__circle {
-	background-color:green;
+	background-image: url(img/content/content-circle__second.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 }
 
 .content__item-third__circle {
-	background-color:blue;
+	background-image: url(img/content/content-circle__third.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 }
 
 .content__item-first {
@@ -216,12 +240,12 @@ a {
 
 .content__first-text h2 {
 	color: #FFD700;
-	font-size: 2em;
+	font-size: 24px;
 	padding: 10px 0 10px;
 }
 
 .content__first-text p {
-	font-size: 1em;
+	font-size: 20px;
 }
 
 .content-second h3 {
@@ -240,15 +264,18 @@ a {
 }
 
 .content__img {
-	background-color: #fff;
+	background-image: url(img/content/content-second.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 	width: 850px;
-	height: 200px;
+	height: 400px;
 	margin: 0 20px 20px 20px;
 }
 
 .content__second-text {
 	max-width: 35%;
-	font-size: 1em;
+	font-size: 20px;
 }
 
 .button a {
@@ -271,35 +298,32 @@ a {
 	transform: scale(1.1);
 }
 
-.footer-first {
-	display: flex;
-	flex-basis: 100%;
-	min-height: 300px;
-	background-color: #1e1e1b;
-	font-family: "Alfios";
-}
-
-.footer-menu {
+.footer {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-basis: 100%;
-}
-
-.footer-menu__item {
+	min-height: 100px;
+	background-color: #1e1e1b;
+	font-family: "Alfios";
 	text-align: center;
-	margin: 20px 50px 0 20px;
 }
 
-.footer-menu__item li {
-	color: white;
-	padding: 15px 0;
-}
-
-.footer-menu__item a {
-	color: white;
-}
-
-.footer-menu__item li:first-child {
+.footer span {
 	color: #FFD700;
-	font-size: 1.5em;
 }
+
+.footer img {
+	width: 100px;
+	height: 100px;
+}
+
+.footer a {
+	transition: all .5s;
+}
+
+.footer a:hover {
+	transition: all .5s;
+	transform: scale(1.2);
+}
+
