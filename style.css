@@ -30,9 +30,8 @@ a {
 	padding-right: 50px;
 }
 .header-logo img {
-	height: 60px;
-	width: 250px;
-
+	height: 56px;
+	width: 220px;
 }
 
 .header-menu{
@@ -77,11 +76,17 @@ a {
 	letter-spacing: 1px;
 }
 .header-list__item-drop li:hover {
-	transform: translateX(5px);
+	transform: translateX(8px);
 }
 
 .header-list li:hover > ul {
 	display: block;
+}
+
+
+.header-list__drop-left {
+	margin-top: -33px;
+	left: 144px;
 }
 
 .header-autr {
@@ -269,8 +274,8 @@ a {
 	-webkit-background-size: 100%;
 	background-size: 100%;
 	width: 850px;
-	height: 400px;
-	margin: 0 20px 20px 20px;
+	height: 450px;
+	margin: 0 20px;
 }
 
 .content__second-text {
@@ -314,8 +319,9 @@ a {
 }
 
 .footer img {
-	width: 100px;
-	height: 100px;
+	margin: 8px;
+	width: 40px;
+	height: 40px;
 }
 
 .footer a {
