@@ -135,5 +135,41 @@ a {
 	transform: scale(1.2);
 }
 
-.contain {
-  min-height: calc(100vh - 156px);
+.content {
+	min-height: calc(100vh - 156px);
+	font-family: "Alfios";
+}
+
+.headline {
+	display: flex;
+	justify-content: center;
+	margin: 80px 0;
+	font-size: 40px;
+	color: #ffd700;
+}
+
+.content__item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #fff;
+	flex-basis: 70%;
+}
+
+.content__img {
+	width: 40%;
+}
+
+.content__text {
+	max-width: 40%;
+	font-size: 22px;
+	text-align: justify;
+}
+
+.content__text-bottom {
+	margin: 80px auto 50px;
+	max-width: 80%;
+	font-size: 20px;
+	color: #fff;
+	text-align: justify;
+}
