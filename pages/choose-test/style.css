@@ -134,3 +134,68 @@ a {
 	transition: all .5s;
 	transform: scale(1.2);
 }
+
+.content {
+  min-height: calc(100vh - 156px);
+}
+
+.page-links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20px 70px 20px 70px;
+}
+
+.page-links img {
+	transition: all .4s;
+}
+
+.test-link {
+	text-align: center;
+	width: 30%;
+	padding: 25px;
+}
+
+.img-first {
+	height: 180px;
+	width: 140px;
+}
+
+.img-second {
+	height: 180px;
+	width: 160px;
+}
+
+.img-third {
+	height: 220px;
+	width: 220px;
+}
+
+.img-fourth {
+	height: 220px;
+	width: 330px;
+}
+
+.img-fifth {
+	height: 200px;
+	width: 400px;
+}
+
+.img-sixth {
+	height: 180px;
+	width: 320px;
+}
+
+.headline {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0;
+	font-family: 'Alfios';
+	font-size: 40px;
+	color: #ffd700;
+}
+
+.page-links img:hover {
+	transform: scale(1.08);
+	transition: all .4s;
+}

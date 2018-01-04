@@ -1,0 +1,139 @@
+.page { 
+	width: 100%;
+	background-color: #272822;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.header {
+	width: 100%;
+	min-height: auto;
+	background: linear-gradient(to top,#232323,#666666);
+	font-family: 'Amatic SC';
+	font-size: 26px;
+	font-weight: 500;
+	text-shadow: 0 2px 2px rgba(139, 69, 19,0.5);
+	color: #FFD700;
+}
+
+.header-content {
+	display: flex;
+}
+
+.header-logo {
+	display: flex;
+	flex-basis: 25%;
+	justify-content: flex-end;
+	padding-right: 50px;
+}
+.header-logo img {
+	height: 56px;
+	width: 220px;
+}
+
+.header-menu{
+	flex-basis: 50%;
+}
+
+.header-list{
+	display: flex;
+	justify-content: space-evenly;
+	transition: all 0.5s;
+}
+
+.header-list__item {
+	position: relative;
+	padding: 15px 0;
+}
+.header-list__item a:hover {
+	transition: all 0.3s;
+	text-shadow: 0 0 20px #fff;
+}
+
+.header-list__item a {
+	transition: all 0.3s;
+	color: #FFD700;
+}
+
+.header-list__item-drop {
+	display: none;
+	position: absolute;
+	z-index: 5;
+	margin-top: 10px;
+	left: -10px;
+}
+
+.header-list__item-drop li {
+	display: block;
+	padding: 10px;
+	background-color: #232323;
+	border: 1px solid #000;
+	transition: all .5s;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+.header-list__item-drop li:hover {
+	transform: translateX(8px);
+}
+
+.header-list li:hover > ul {
+	display: block;
+}
+
+
+.header-list__drop-left {
+	margin-top: -33px;
+	left: 144px;
+}
+
+.header-autr {
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 25%;
+	align-items: center;
+	padding-right: 30px;
+}
+
+.header-autr__item {
+	padding: 10px;
+	background: linear-gradient(to top,#D2691E,#FCDD76) ;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(139, 69, 19,1);
+	text-align: center;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+	min-height: 100px;
+	background-color: #1e1e1b;
+	font-family: "Alfios";
+	text-align: center;
+}
+
+.footer span {
+	color: #FFD700;
+}
+
+.footer img {
+	margin: 8px;
+	width: 40px;
+	height: 40px;
+}
+
+.footer a {
+	transition: all .5s;
+}
+
+.footer a:hover {
+	transition: all .5s;
+	transform: scale(1.2);
+}
+
+.contain {
+  min-height: calc(100vh - 156px);
