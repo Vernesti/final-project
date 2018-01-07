@@ -140,89 +140,34 @@ a {
 	font-family: "Alfios";
 }
 
-.headline {
-	display: flex;
-	justify-content: center;
-	margin: 80px 0;
-	font-size: 40px;
-	color: #ffd700;
-}
-
-.content__item {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	color: #fff;
-	flex-basis: 80%;
-}
-
-.content__img {
-	width: 40%;
-}
-
-.content__text {
-	max-width: 40%;
-	font-size: 22px;
-	text-align: justify;
-}
-
-.content__text-bottom {
-	margin: 80px auto 50px;
-	max-width: 80%;
-	font-size: 20px;
-	color: #fff;
-	text-align: justify;
-}
-
-.gallery {
+#map {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-basis: 80%;
-	flex-wrap: wrap;
+	height: 600px;
 }
 
-.gallery__item {
-	margin: 0.5%;
+.content-contacts {
+	margin: 60px 0 40px 200px;
 }
 
-.gallery__item img {
-	width: 300px;
-	height: 300px;
-}
-
-.pressbox {
-	width: 0;
-	height: 0;
-	position: fixed;
-	overflow: hidden;
-	left: 0;
-	top: 0;
-	z-index: 10;
-	text-align: center;
-	background: rgba(0,0,0,0.6);
-}
- 
- .pressbox img  {
-	opacity: 0;
+.timetable {
+	font-size: 26px;
+	color: #ffd700;
 	padding: 10px;
-	background: #ffffff;
-	margin: 200px auto;
-	-webkit-box-shadow: 0px 0px 15px #444;
-	-moz-box-shadow: 0px 0px 15px #444; 
-	box-shadow: 0px 0px 15px #444;
-	-moz-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
 }
- 
-.pressbox:target {
-   width: auto;
-   height: auto;
-   bottom: 0;
-   right: 0;
+
+.contact {
+	font-size: 22px;
+	color: #fff;
+	padding: 5px;
 }
- 
-.pressbox:target img {
-	opacity: 1;
+
+.contact a {
+	color: #ffd700;
+	font-style: italic;
+}
+
+.contact a:hover {
+	text-decoration: underline;
 }
