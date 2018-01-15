@@ -142,6 +142,7 @@ a {
 .page-links {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin: 20px 70px 20px 70px;
 }
@@ -158,7 +159,7 @@ a {
 
 .img-first {
 	height: 180px;
-	width: 140px;
+	width: 150px;
 }
 
 .img-second {
@@ -167,8 +168,8 @@ a {
 }
 
 .img-third {
-	height: 220px;
-	width: 220px;
+	height: 180px;
+	width: 160px;
 }
 
 .img-fourth {
@@ -177,8 +178,8 @@ a {
 }
 
 .img-fifth {
-	height: 200px;
-	width: 400px;
+	height: 180px;
+	width: 360px;
 }
 
 .img-sixth {
