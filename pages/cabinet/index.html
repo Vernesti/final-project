@@ -6,8 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../../styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../../fonts.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="../../styles/media.css">
-	<title>Night Vision - Выбор теста</title>
+	<script src="../../js/jquery-3.2.1.min.js"></script>
+	<title>Night Vision - Личный кабинет</title>
 </head>
 <body>
 	<div class="page">
@@ -22,7 +22,7 @@
 								<a href="../../index.html">Главная</a>
 							</li>
 							<li class="header-list__item">
-								<a href="#">Тестирование</a>
+								<a href="../choose-test/index.html">Тестирование</a>
 								<ul class="header-list__item-drop">
 									<li><a href="#">Програмирование</a>
 										<ul class="header-list__item-drop header-list__drop-left">
@@ -46,44 +46,38 @@
 					</nav>
 					</div>
 					<div class="header-autr">
-						<a class="header-autr__item" href="../cabinet/index.html">Личный кабинет</a>
+						<a class="header-autr__item" href="#">Личный кабинет</a>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main>
 			<div class="content">
-				<span class="headline">Выберите категорию тестирования</span>
-				<div class="page-links">
-					<div class="test-link">
-						<a href="../test__javascript/index.html">
-							<img class="img-first" src="../../img/tests/js.png">
-						</a>
+				<div class="cabinet-profile">
+					<div class="cabinet-profile__img">
+						<img src="../../img/cabinet/photo.jpg" alt="Profile photo">
 					</div>
-					<div class="test-link">
-						<a href="../test__c++/index.html">
-							<img class="img-second" src="../../img/tests/c++.png">
-						</a>
+					<div class="cabinet-profile__name">
+						<h2>Main manager</h2>
+						<p>Дата регистрации <span class="regDate">13 декабря 2017</span></p>
 					</div>
-					<div class="test-link">
-						<a href="../test__c%23/index.html">
-							<img class="img-third" src="../../img/tests/c%23.png">
-						</a>
-					</div>
-					<div class="test-link">
-						<a href="../test__layout/index.html">
-							<img class="img-fourth" src="../../img/tests/layout.png">
-						</a>
-					</div>
-					<div class="test-link">
-						<a href="../test__english/index.html">
-							<img class="img-fifth" src="../../img/tests/english.png">
-						</a>
-					</div>
-					<div class="test-link">
-						<a href="../test__ss/index.html">
-							<img class="img-sixth" src="../../img/tests/soft-skills.png">
-						</a>
+				</div>
+				<div class="cabinet-menu">
+					<ul class="cabinet-list">
+						<li>Поиск пользователя</li>
+						<li class="cabinet-list__item-choose">Результаты тестов</li>
+						<li>Статистика</li>
+						<li>Настройки</li>
+						<li>Выход</li>
+					</ul>
+					<div class="cabinet-content">
+						<div class="cabinet-content__tag">
+							<span>Отправленные тесты</span>
+						</div>
+						<table class="table-main__tests">
+							
+						</table>
+						
 					</div>
 				</div>
 			</div>
@@ -98,6 +92,6 @@
 		</footer>
 	</div>
 
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

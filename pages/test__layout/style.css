@@ -105,6 +105,10 @@ a {
 	text-align: center;
 }
 
+a.header-autr__item:hover {
+	background: #FCDD76;
+}
+
 .footer {
 	display: flex;
 	justify-content: center;
