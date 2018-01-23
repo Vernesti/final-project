@@ -49,7 +49,7 @@ $(document).ready(function () {
 		}());
 		(function addJSTableRow() {
 			$('table').append( 
-				'<tr class="main-line">'+
+				'<tr class="main-line" id="tr-js">'+
 				'<td class="td-username">'+
 					'<p>Пользователь <a class="username"> ' + nameOfParticipant + '</a></p>'+
 				'</td>'+
@@ -90,9 +90,9 @@ $(document).ready(function () {
 			if (returnCPlusInput[8].value == '9-4') {resultCPlus += 10;}
 			if (returnCPlusInput[9].value == '10-5') {resultCPlus += 10;}
 		}());
-		(function addJSTableRow() {
+		(function addCPlusTableRow() {
 			$('table').append( 
-				'<tr class="main-line">'+
+				'<tr class="main-line" id="tr-cPlus">'+
 				'<td class="td-username">'+
 					'<p>Пользователь <a class="username"> ' + nameOfParticipant + '</a></p>'+
 				'</td>'+
@@ -121,7 +121,7 @@ $(document).ready(function () {
 	// C#
 
 	if (returnCSharpInput != 0) {
-		(function countJSResult() {
+		(function countCSharpResult() {
 			if (returnCSharpInput[0].value == '1-1') {resultCSharp += 10;}
 			if (returnCSharpInput[1].value == '2-2') {resultCSharp += 10;}
 			if (returnCSharpInput[2].value == '3-3') {resultCSharp += 10;}
@@ -135,7 +135,7 @@ $(document).ready(function () {
 		}());
 		(function addCSharpTableRow() {
 			$('table').append( 
-				'<tr class="main-line">'+
+				'<tr class="main-line" id="tr-cSharp">'+
 				'<td class="td-username">'+
 					'<p>Пользователь <a class="username"> ' + nameOfParticipant + '</a></p>'+
 				'</td>'+
@@ -178,7 +178,7 @@ $(document).ready(function () {
 		}());
 		(function addLayoutTableRow() {
 			$('table').append( 
-				'<tr class="main-line">'+
+				'<tr class="main-line" id="tr-layout">'+
 				'<td class="td-username">'+
 					'<p>Пользователь <a class="username"> ' + nameOfParticipant + '</a></p>'+
 				'</td>'+
@@ -221,7 +221,7 @@ $(document).ready(function () {
 		}());
 		(function addEnglishTableRow() {
 			$('table').append( 
-				'<tr class="main-line">'+
+				'<tr class="main-line" id="tr-eng">'+
 				'<td class="td-username">'+
 					'<p>Пользователь <a class="username"> ' + nameOfParticipant + '</a></p>'+
 				'</td>'+
@@ -264,7 +264,7 @@ $(document).ready(function () {
 		}());
 		(function addSSTableRow() {
 			$('table').append( 
-				'<tr class="main-line">'+
+				'<tr class="main-line" id="tr-ss">'+
 				'<td class="td-username">'+
 					'<p>Пользователь <a class="username"> ' + nameOfParticipant + '</a></p>'+
 				'</td>'+
@@ -292,3 +292,69 @@ $(document).ready(function () {
 
 })
 	
+var checkboxAll = document.getElementById('checkbox-all');
+
+$('#checkbox-all').click( function(){
+	if (Array.prototype.filter.call($('#checkbox-all:checked'), 
+			function( checkedElem ) { return checkedElem.checked;}).length 
+		/* checkboxAll.hasAttribute('checked')*/) {
+		$('.main-line').css('display', 'table-row');
+	} else {
+		$('.main-line').css('display', 'none');
+		
+	}
+});
+// console.log(checkboxAll.hasAttribute('checked'));
+$('#checkbox-js').click( function(){
+	if (Array.prototype.filter.call($('#checkbox-js:checked'), 
+			function( checkedElem ) { return checkedElem.checked;}).length ) {
+		$('#tr-js').css('display', 'table-row');
+	} else {
+		$('#tr-js').css('display', 'none');
+	}
+});
+
+$('#checkbox-cPlus').click( function(){
+	if (Array.prototype.filter.call($('#checkbox-cPlus:checked'), 
+			function( checkedElem ) { return checkedElem.checked;}).length ) {
+		$('#tr-cPlus').css('display', 'table-row');
+	} else {
+		$('#tr-cPlus').css('display', 'none');
+	}
+});
+
+$('#checkbox-cSharp').click( function(){
+	if (Array.prototype.filter.call($('#checkbox-cSharp:checked'), 
+			function( checkedElem ) { return checkedElem.checked;}).length ) {
+		$('#tr-cSharp').css('display', 'table-row');
+	} else {
+		$('#tr-cSharp').css('display', 'none');
+	}
+});
+
+$('#checkbox-eng').click( function(){
+	if (Array.prototype.filter.call($('#checkbox-eng:checked'), 
+			function( checkedElem ) { return checkedElem.checked;}).length ) {
+		$('#tr-eng').css('display', 'table-row');
+	} else {
+		$('#tr-eng').css('display', 'none');
+	}
+});
+
+$('#checkbox-layout').click( function(){
+	if (Array.prototype.filter.call($('#checkbox-layout:checked'), 
+			function( checkedElem ) { return checkedElem.checked;}).length ) {
+		$('#tr-layout').css('display', 'table-row');
+	} else {
+		$('#tr-layout').css('display', 'none');
+	}
+});
+
+$('#checkbox-ss').click( function(){
+	if (Array.prototype.filter.call($('#checkbox-ss:checked'), 
+			function( checkedElem ) { return checkedElem.checked;}).length ) {
+		$('#tr-ss').css('display', 'table-row');
+	} else {
+		$('#tr-ss').css('display', 'none');
+	}
+});

@@ -305,3 +305,18 @@ ul li.cabinet-list__item-choose {
 	text-align: center;
 	font-size: 18px;
 }
+
+.filter {
+	display: flex;
+	font-size: 20px;
+}
+
+.filter p {
+	padding: 10px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.filter span {
+	padding: 10px;
+}
