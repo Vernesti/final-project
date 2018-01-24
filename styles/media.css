@@ -51,4 +51,39 @@
 		font-size: 45px;
 	}
 
+	.footer span {
+		font-size: 25px;
+	}
+
+	.footer img {
+		margin: 8px;
+		width: 60px;
+		height: 60px;
+	}
+	.slider {
+		display: none;
+	}
+
+	.header-content {
+		display: block;
+		overflow: hidden;
+	}
+	
+	.header-logo {
+		display: block;
+		width: 100%;
+	}
+	.header-list {
+		display: none;
+	}
+	.header-menu__touch {
+		display: flex;
+	}
+
+	.header-menu {
+		width: 50%;
+	}
+	.header-autr {
+		width: 50%;
+	}
 }

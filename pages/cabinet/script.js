@@ -290,6 +290,26 @@ $(document).ready(function () {
 		}());
 	}
 
+$('body').on('click', '#highResults', function (e) {
+        console.log(e);
+        var sortParam = $('.persents');
+        var sortTable =  $('table');
+
+            sortTable = sortTable.sort(function(a, b) {
+            if (a[sortParam] > b[sortParam]) {
+                return 1;
+            }
+
+            if (a[sortParam] < b[sortParam]) {
+                return -1;
+            }
+
+            return 0;
+        });
+       addJSTableRow(sortTable);
+       //вернути таблицю...
+    });
+
 })
 	
 var checkboxAll = document.getElementById('checkbox-all');

@@ -101,6 +101,11 @@ a {
 	left: 144px;
 }
 
+.header-menu__touch {
+	color: #ffd700;
+	display: none;
+}
+
 .header-autr {
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -340,12 +345,14 @@ a.header-autr__item:hover {
 
 .footer span {
 	color: #FFD700;
+	transition: all .5s;
 }
 
 .footer img {
 	margin: 8px;
 	width: 40px;
 	height: 40px;
+	transition: all .5s;
 }
 
 .footer a {
