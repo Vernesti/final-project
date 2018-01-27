@@ -29,6 +29,7 @@ a {
 	justify-content: flex-end;
 	padding-right: 50px;
 }
+
 .header-logo img {
 	height: 56px;
 	width: 220px;
@@ -97,7 +98,7 @@ a {
 	padding-right: 30px;
 }
 
-.header-autr__item {
+.header-autr__item , .header-autr-resp__item {
 	padding: 10px;
 	background: linear-gradient(to top,#D2691E,#FCDD76) ;
 	border-radius: 10px;
@@ -162,18 +163,18 @@ a.header-autr__item:hover {
 }
 
 .img-first {
-	height: 180px;
-	width: 150px;
+	height: 220px;
+	width: 185px;
 }
 
 .img-second {
-	height: 180px;
-	width: 160px;
+	height: 220px;
+	width: 200px;
 }
 
 .img-third {
-	height: 180px;
-	width: 160px;
+	height: 220px;
+	width: 200px;
 }
 
 .img-fourth {
@@ -203,4 +204,8 @@ a.header-autr__item:hover {
 .page-links img:hover {
 	transform: scale(1.08);
 	transition: all .4s;
+}
+
+.header-content-resp {
+	display: none;
 }
