@@ -104,6 +104,7 @@ a {
 	border-radius: 10px;
 	box-shadow: 0 0 15px rgba(139, 69, 19,1);
 	text-align: center;
+	max-height: 56px;
 }
 
 a.header-autr__item:hover {
