@@ -308,6 +308,7 @@ a.header-autr__item:hover {
 .content__second-text {
 	max-width: 35%;
 	font-size: 20px;
+	padding: 10px;
 }
 
 .button a {
