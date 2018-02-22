@@ -309,6 +309,7 @@ ul li.cabinet-list__item-choose {
 .filter {
 	display: flex;
 	font-size: 20px;
+	width: 100%;
 }
 
 .filter p {
